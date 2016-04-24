@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+    <title>{% block title %} TITLE HERE {% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="./static/styles.css">
+</head>
+<body>
+<!-- 
+Create a new template called base.html. Have your other two templates inherit
+from base.html using Jinja's { % extends % } and { % block % } syntax.
+ -->
+
+	{% block content %} BASE HTML {% endblock %}
+
+ <footer>&copy; Balloonicorn Productions 2016. No rights reserved.</footer>
+</body>
+</html>
+

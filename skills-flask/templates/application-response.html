@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %} Application Response {% endblock %}
+
+{% block content %}
+
+
+<!-- fill this in -->
+<!-- 
+    * Returns a response that acknowledges their application. This should
+    repeat their name, title, and salary requirement, like:
+
+        Thank you, Jessica McHackbright, for applying to be a QA Engineer. Your
+        minimum salary requirement is 89000 dollars.
+
+    You should do this by using a Jinja template.
+-->
+
+	<h1>Balloonicorn Science Lab: <br>Dreams and Aspirations</h1>
+
+	<p> The psychics in Balloonicorn's control group have said that your name is <span class="user_input"> {{ first_name}} {{last_name}}</span> and, in four months, you will be a <span class="user_input">{{ job }}</span> making <span class="user_input">${{ salary }}.00</span> a year! Hooray! </p>
+
+{% endblock %}

@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+    <title>Skills-HTML-CSS</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+
+<!-- your html goes here -->
+<!-- 
+Add to the HTML document application-form.html so that it has the following items.
+
+A form that asks the user:
+Their first and last name (as separate fields),
+Their salary requirement as a number, and
+Which job they are applying for, from a list of:
+Software Engineer
+QA Engineer
+Product Manager
+The form should also have a submit button that submits the form to the URL path /application. This should be a POST request. (For now, just focus on the HTML requirements for this request. Don’t build a Flask route, yet.)
+The page should have a large heading and some explanatory text, as well.
+Add the elements to make your HTML form accessible to screen readers. For more information, see http://webaim.org/techniques/forms/controls.
+-->
+
+	<h1>Balloonicorn Science Lab: Dreams and Aspirations</h1>
+
+	<p class="exp_text">Balloonicorn is testing psychic predictions, and she needs your help. She is asking psychics about your future, and needs to know a little more about you. To figure out if the psychic is really thinking of you or if the psychic has their wires crossed, please enter the following information (only Balloonicorn will see this)</p>
+
+	<form action="/application" method="post">
+		<label for="first_name">First Name: </label><br>
+		<input id="first_name" type="text" name="first_name"><br>
+		<label for="last_name">Last Name: </label><br>
+		<input id="last_name" type="text" name="last_name"><br>
+		<label for="salary">Salary desired: </label><br>
+		<input id="salary" type="text" name="salary"><br>
+
+		<label for="job">Desired Job:</label><br>
+		<select id="job" name="job">
+			<option value="eng_sw">Software Engineer</option>
+			<option value="eng_qa">QA Engineer</option>
+			<option value="prod_pm">Product Manager</option>
+		</select><br><br>
+		<input type="submit" name="submit" value="For Science!">
+	</form>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
